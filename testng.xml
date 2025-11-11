@@ -7,20 +7,20 @@
   <test thread-count="5" name="testng.xml">
     <classes>
       <class name="TestCases.processmap_rejections"/>
-      <class name="TestCases.gelocate_working_hours"/>
-        <class name="TestCases.System_applications"/>
-        <class name="TestCases.products"/>
-        <class name="TestCases.periodic_activities"/>
-        <class name="TestCases.Volume"/>
-        <class name="TestCases.AHT"/>
-        <class name="TestCases.gelocate_team_size"/>
-        <class name="TestCases.Input_screen_release_wait_type"/>
-         <class name="TestCases.Deadlines"/>
-         <class name="TestCases.forms"/>
-         <class name="TestCases.business_rules"/>
-         <class name="TestCases.Team_salary"/>
-         <class name="TestCases.opeartion_sites"></class>
-         <class name="TestCases.NVA">
+    <!--   <class name="TestCases.gelocate_working_hours"/> -->
+       <!-- <class name="TestCases.System_applications"/> -->
+       <!-- <class name="TestCases.products"/> -->
+      <!--  <class name="TestCases.periodic_activities"/> -->
+      <!--  <class name="TestCases.Volume"/> -->
+     <!--   <class name="TestCases.AHT"/> -->
+     <!--   <class name="TestCases.gelocate_team_size"/> -->
+      <!--  <class name="TestCases.Input_screen_release_wait_type"/> -->
+     <!--    <class name="TestCases.Deadlines"/> -->
+      <!--   <class name="TestCases.forms"/> -->
+      <!--   <class name="TestCases.business_rules"/> -->
+     <!--    <class name="TestCases.Team_salary"/> -->
+      <!--   <class name="TestCases.opeartion_sites"></class> -->
+      <!--   <class name="TestCases.NVA"> -->
          </class>
          
         

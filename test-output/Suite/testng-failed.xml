@@ -6,20 +6,13 @@
   </listeners>
   <test thread-count="5" name="testng.xml(failed)">
     <classes>
-      <class name="TestCases.Volume">
-        <methods>
-          <include name="closeTheUrl"/>
-          <include name="volume"/>
-          <include name="openURL"/>
-        </methods>
-      </class> <!-- TestCases.Volume -->
-      <class name="TestCases.products">
+      <class name="TestCases.processmap_rejections">
         <methods>
           <include name="closeTheUrl"/>
           <include name="openURL"/>
-          <include name="products"/>
+          <include name="processmap_rejections"/>
         </methods>
-      </class> <!-- TestCases.products -->
+      </class> <!-- TestCases.processmap_rejections -->
     </classes>
   </test> <!-- testng.xml(failed) -->
 </suite> <!-- Failed suite [Suite] -->

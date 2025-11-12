@@ -19,11 +19,15 @@ public class Login_Page {
 	@FindBy(xpath="//button[@type='submit']")WebElement submit;
 	
 	
-	public void Enter_UserName(String user) {
+	
+	
+	public void Enter_UserName(String user) 
+	{
 		username.sendKeys(user);
 	}
 	
-	public void Enter_Passsword(String psw) {
+	public void Enter_Passsword(String psw) 
+	{
 		password.sendKeys(psw);
 	}
 	

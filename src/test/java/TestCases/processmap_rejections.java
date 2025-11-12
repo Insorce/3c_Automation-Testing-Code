@@ -71,8 +71,8 @@ public class processmap_rejections extends Baseclass
 
 		
 		//click on input button
-		Thread.sleep(3000);
-		WebElement input_button=driver.findElement(By.xpath("//a[@title=\"Input Model\"]"));
+		Thread.sleep(5000);
+		WebElement input_button=driver.findElement(By.xpath("//a[@title='Input Model']"));
 		JavascriptExecutor click_input_button = (JavascriptExecutor)driver;
 		click_input_button.executeScript("arguments[0].click();", input_button);
 		
@@ -626,8 +626,9 @@ public class processmap_rejections extends Baseclass
 //		JavascriptExecutor upload_click1 = (JavascriptExecutor) driver;
 //		upload_click1.executeScript("arguments[0].click();", just_click_upload1);
 //
-
-		//click on the legend
+//
+	    //click on the legend
+		Thread.sleep(5000);
 		WebElement legend=driver.findElement(By.xpath("//a[@title='Legend']"));
 		JavascriptExecutor click_legend = (JavascriptExecutor)driver;
 		click_legend.executeScript("arguments[0].click();", legend);

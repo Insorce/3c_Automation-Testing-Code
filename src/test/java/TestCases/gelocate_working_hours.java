@@ -23,13 +23,12 @@ public class gelocate_working_hours extends Baseclass
     {
     	
     	
-
 		WebDriver driver= new ChromeDriver();
-		driver.get("https://pbl.3-cubed.com/");
-		String A="https://pbl.3-cubed.com/";	
+		driver.get("https://prod.3-cubed.com/");
+		String A="https://prod.3-cubed.com/";	
 
 		
-		String WelcomePage="https://pbl.3-cubed.com/Projects/Welcome";
+		String WelcomePage="https://prod.3-cubed.com/Projects/Welcome";
 
 		driver.get(A);
 		//Maximize window
@@ -45,7 +44,7 @@ public class gelocate_working_hours extends Baseclass
 			System.out.println("Login Success");
 		}
 
-		if (AA.equals("https://pbl.3-cubed.com/Account/LogOn"))
+		if (AA.equals("https://prod.3-cubed.com/Account/LogOn"))
 		{
 			driver.findElement(By.xpath("//button[text()='Log Out']")).click();
 			driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("Rama krishna");
@@ -67,7 +66,7 @@ public class gelocate_working_hours extends Baseclass
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='4259: zip__file__infosys5182']")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
@@ -81,8 +80,8 @@ public class gelocate_working_hours extends Baseclass
 
 	  
 
-		driver.navigate().to("https://pbl.3-cubed.com/Process/GeolocateWorkingHours");
-		
+		driver.navigate().to("https://prod.3-cubed.com/Process/GeolocateWorkingHours");
+//		
 //		//click on bulk download
 //		WebElement bulk_download=driver.findElement(By.xpath("//button[text()='Bulk Upload']"));
 //		JavascriptExecutor click_download = (JavascriptExecutor)driver;
@@ -211,7 +210,7 @@ public class gelocate_working_hours extends Baseclass
 
 		}
 		
-		//clcik on review
+		//clickk on review
 		Thread.sleep(3000);
 		WebElement observations_insorce=driver.findElement(By.xpath("//a[@id='obs-tab']"));
 		JavascriptExecutor team_1 = (JavascriptExecutor)driver;
@@ -219,10 +218,10 @@ public class gelocate_working_hours extends Baseclass
 
 
 		//click on the hyper links in observations
-		
-			WebElement hyper_link=driver.findElement(By.xpath("//div[@id='Observations']/following::a[normalize-space()='Click to View Popup and interaction model']"));
-			JavascriptExecutor link_click = (JavascriptExecutor)driver;
-			link_click.executeScript("arguments[0].click();", hyper_link);
+
+		WebElement hyper_link=driver.findElement(By.xpath("//div[@id='Observations']/following::a[normalize-space()='Click to View Popup and interaction model']"));
+		JavascriptExecutor link_click = (JavascriptExecutor)driver;
+		link_click.executeScript("arguments[0].click();", hyper_link);
 
 		
 		//click team responsible for rejection outcome
@@ -259,8 +258,7 @@ public class gelocate_working_hours extends Baseclass
 //		WebElement information=driver.findElement(By.xpath("//a[@id='information-tab']"));
 //		JavascriptExecutor information_click = (JavascriptExecutor)driver;
 //		information_click.executeScript("arguments[0].click();", information);
-//		
-//		
+		
 		//click on interaction model
 		WebElement interaction_model=	driver.findElement(By.xpath("//button[text()='Interaction Model']"));
 		JavascriptExecutor click_link = (JavascriptExecutor)driver;
@@ -287,15 +285,20 @@ public class gelocate_working_hours extends Baseclass
 			click_all_links.executeScript("arguments[0].click();", models);
 			
 		}
+		//click on the close
 		
-	//click on the system and applications
-		
+		WebElement close_popup=	driver.findElement(By.xpath("//div[@id='OpenTeamsInteractionModal']/descendant::button[@type='button']"));
+		JavascriptExecutor click_popup = (JavascriptExecutor)driver;
+		click_popup.executeScript("arguments[0].click();", close_popup);
+
+		//click on the system and applications
+        Thread.sleep(3000);
 		WebElement system_applications=	driver.findElement(By.xpath("//a[text()='Systems & Applications ']"));
 		JavascriptExecutor system_app_click = (JavascriptExecutor)driver;
 		system_app_click.executeScript("arguments[0].click();", system_applications);
 
 		
-//		
+	
 //		//click on gen ai
 //		Thread.sleep(3000);
 //		WebElement gen_ai=	driver.findElement(By.xpath("//a[@id='genai-tab']"));
@@ -318,7 +321,7 @@ public class gelocate_working_hours extends Baseclass
 
 
 
-////		//click on download the team details
+		//click on download the team details
 //
 //		WebElement donwload_details=driver.findElement(By.xpath("//a[text()='Download Team Details File']"));
 //		JavascriptExecutor details = (JavascriptExecutor)driver;
@@ -339,11 +342,13 @@ public class gelocate_working_hours extends Baseclass
 //	
 //		driver.quit();
 		
-//		//click on team salary
-//		Thread.sleep(3000);
-//		WebElement  team_salary=driver.findElement(By.xpath("//a[@class='btn btn-warning text-black']"));
-//		JavascriptExecutor team_salary_click = (JavascriptExecutor)driver;
-//		team_salary_click.executeScript("arguments[0].click();", team_salary);
+		//click on system and applications
+		
+		Thread.sleep(3000);
+		WebElement  system_and_applications=driver.findElement(By.xpath("//a[text()='Systems & Applications ']"));
+		
+		JavascriptExecutor click_sys = (JavascriptExecutor)driver;
+		click_sys.executeScript("arguments[0].click();", system_and_applications);
 
     }
     	

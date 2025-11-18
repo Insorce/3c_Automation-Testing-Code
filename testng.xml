@@ -7,6 +7,8 @@
   <test thread-count="5" name="testng.xml">
     <classes>
       <class name="TestCases.processmap_rejections"/>
+       <class name="TestCases.gelocate_working_hours"/>
+      <class name="TestCases.System_applications"/>
    
     </classes>
   </test> <!-- testng.xml -->

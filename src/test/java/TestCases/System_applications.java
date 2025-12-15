@@ -1,20 +1,17 @@
 package TestCases;
 
-import Base.Baseclass;
 import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import Base.Baseclass;
 
 public class System_applications extends Baseclass 
 
@@ -30,7 +27,6 @@ public class System_applications extends Baseclass
 		driver.get("https://prod.3-cubed.com/");
 		String A="https://prod.3-cubed.com/";	
 
-		
 		String WelcomePage="https://prod.3-cubed.com/Projects/Welcome";
 
 		driver.get(A);
@@ -68,7 +64,7 @@ public class System_applications extends Baseclass
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"5349: zip--test\"]")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 

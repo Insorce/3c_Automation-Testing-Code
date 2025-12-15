@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.processmap_rejections">
+      <class name="Decision_tree_automation.Competancy_compensation_team_location">
         <methods>
-          <include name="closeTheUrl"/>
-          <include name="openURL"/>
-          <include name="processmap_rejections"/>
+          <include name="Compentancy_Cost"/>
         </methods>
-      </class> <!-- TestCases.processmap_rejections -->
+      </class> <!-- Decision_tree_automation.Competancy_compensation_team_location -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

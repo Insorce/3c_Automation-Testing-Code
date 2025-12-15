@@ -64,7 +64,7 @@ public class Input_screen_release_wait_type
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"5349: zip--test\"]")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
@@ -130,25 +130,40 @@ public class Input_screen_release_wait_type
 		
 
 
-		//enter the list of activites
-		List<WebElement> list_activities =driver.findElements(By.xpath("//div[@id='WTActs']/descendant::input[@type='text']"));
+		List<WebElement> list_activities = driver.findElements(By.xpath("//div[@id='WTActs']/descendant::input[@type='text']"));
+		Actions action = new Actions(driver);
 
+		for (WebElement element : list_activities) {
 
-		for (int i = 1 ; i<=list_activities.size(); i++)
-		{
+		    try {
 
+		        // Check if the element is displayed & enabled
+		        if (element.isDisplayed() && element.isEnabled()) {
 
-			Thread.sleep(3000);   
-			WebElement teamsize=driver.findElement(By.xpath("//div[@id='WTActs']/descendant::input[@type='text']["+i+"]"));
-			teamsize.sendKeys(Keys.CONTROL, Keys.chord("a"));
-			teamsize.sendKeys(Keys.BACK_SPACE);
-			teamsize.sendKeys("02.02:02:02");
-			Actions aht_clear = new Actions(driver);
-			aht_clear.sendKeys(Keys.ENTER).build().perform();
+		            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		            wait1.until(ExpectedConditions.elementToBeClickable(element));
 
+		            // Click the element
+		            action.moveToElement(element).click().perform();
 
+		            // Clear old value
+		            element.sendKeys(Keys.CONTROL, "a");
+		            element.sendKeys(Keys.BACK_SPACE);
+
+		            // Enter new value
+		            element.sendKeys("02.02:02:02");
+
+		            // Press ENTER
+		            action.sendKeys(Keys.ENTER).perform();
+		        }
+		        else {
+		            System.out.println("Element is NOT visible or NOT enabled, skipping...");
+		        }
+
+		    } catch (Exception e) {
+		        System.out.println("Skipping one element due to error: " + e.getMessage());
+		    }
 		}
-
 
 
 

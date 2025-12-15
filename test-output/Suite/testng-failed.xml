@@ -6,13 +6,11 @@
   </listeners>
   <test thread-count="5" name="testng.xml(failed)">
     <classes>
-      <class name="TestCases.processmap_rejections">
+      <class name="Decision_tree_automation.Automation_motgage_project_for_creation">
         <methods>
-          <include name="closeTheUrl"/>
-          <include name="openURL"/>
-          <include name="processmap_rejections"/>
+          <include name="insorce"/>
         </methods>
-      </class> <!-- TestCases.processmap_rejections -->
+      </class> <!-- Decision_tree_automation.Automation_motgage_project_for_creation -->
     </classes>
   </test> <!-- testng.xml(failed) -->
 </suite> <!-- Failed suite [Suite] -->

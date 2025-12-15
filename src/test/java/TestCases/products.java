@@ -5,18 +5,15 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import Base.Baseclass;
-
+	
 public class products extends Baseclass 
 {
 
@@ -67,7 +64,7 @@ public class products extends Baseclass
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"5349: zip--test\"]")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
@@ -153,30 +150,30 @@ public class products extends Baseclass
 		// Wait until input box is visible and clickable
 		WebElement product = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='NewProdName']")));
 
-		// Clear existing text (if any)
-		product.clear();
-
-		// Generate unique numeric value based on current time (milliseconds)
-		String uniqueNumber = String.valueOf(System.currentTimeMillis() % 1000000); // last 6 digits
-		String uniqueName = "QA_test_" + uniqueNumber;
-
-		// Type unique product name
-		product.sendKeys(uniqueName);
-
-		// Log for debugging
-		System.out.println("Generated product name: " + uniqueName);
-
-		Thread.sleep(5000);
-		//click on + icon to add the requisition
-		WebElement add_requsition= driver.findElement(By.xpath("//i[@class='fas fa-plus input-group-text']"));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(add_requsition).click().perform();
-
-		//click on the text
-    	WebElement text=driver.findElement(By.xpath("//a[contains(text(),'QA_test_')]"));
-        JavascriptExecutor click_text = (JavascriptExecutor)driver;
-        click_text.executeScript("arguments[0].click();", text);
-        			
+//		// Clear existing text (if any)
+//		product.clear();
+//
+//		// Generate unique numeric value based on current time (milliseconds)
+//		String uniqueNumber = String.valueOf(System.currentTimeMillis() % 1000000); // last 6 digits
+//		String uniqueName = "QA_test_" + uniqueNumber;
+//
+//		// Type unique product name
+//		product.sendKeys(uniqueName);
+//
+//		// Log for debugging
+//		System.out.println("Generated product name: " + uniqueName);
+//
+//		Thread.sleep(5000);
+//		//click on + icon to add the requisition
+//		WebElement add_requsition= driver.findElement(By.xpath("//i[@class='fas fa-plus input-group-text']"));
+//		Actions actions = new Actions(driver);
+//		actions.moveToElement(add_requsition).click().perform();
+//
+//		//click on the text
+//    	WebElement text=driver.findElement(By.xpath("//a[contains(text(),'QA_test_')]"));
+//        JavascriptExecutor click_text = (JavascriptExecutor)driver;
+//        click_text.executeScript("arguments[0].click();", text);
+//        			
 
 
 //

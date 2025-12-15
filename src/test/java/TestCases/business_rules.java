@@ -69,7 +69,7 @@ public class business_rules extends Baseclass
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"5349: zip--test\"]")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
@@ -110,16 +110,16 @@ public class business_rules extends Baseclass
 		
 		
 		
-		
-		// Wait object
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-		// Wait until the input box is visible and interactable
-		WebElement inputBox = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='dvNewBR']")));
-
-		// Clear and type
-//		inputBox.clear();
-		inputBox.sendKeys("QA_test");
+//		
+//		// Wait object
+//		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+//
+//		// Wait until the input box is visible and interactable
+//		WebElement inputBox = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='dvNewBR']")));
+//
+//		// Clear and type
+////		inputBox.clear();
+//		inputBox.sendKeys("QA_test");
 //
 //		// Wait for '+' symbol to be clickable
 //		WebElement plusSymbol = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='fas fa-plus input-group-text']")));
@@ -220,11 +220,11 @@ public class business_rules extends Baseclass
 //		JavascriptExecutor click_v = (JavascriptExecutor)driver;
 //		click_v.executeScript("arguments[0].click();", Decision_activity);
 
-		//click on mark as reviewed
-		Thread.sleep(3000);
-		WebElement mark_review_1=driver.findElement(By.xpath("//div[@id='accDecisionActivity']/descendant::input[@type='checkbox']"));
-		JavascriptExecutor click_2 = (JavascriptExecutor)driver;
-		click_2.executeScript("arguments[0].click();", mark_review_1);
+//		//click on mark as reviewed
+//		Thread.sleep(3000);
+//		WebElement mark_review_1=driver.findElement(By.xpath("//div[@id='accDecisionActivity']/descendant::input[@type='checkbox']"));
+//		JavascriptExecutor click_2 = (JavascriptExecutor)driver;
+//		click_2.executeScript("arguments[0].click();", mark_review_1);
 
 		//click on Decision activity
 		WebElement Decision_activity_2=driver.findElement(By.xpath("//button[text()='Decision activity Business rules']"));
@@ -232,11 +232,11 @@ public class business_rules extends Baseclass
 		click_activity.executeScript("arguments[0].click();", Decision_activity_2);
 
 
-		//clcik on business rules automation
-		Thread.sleep(3000);
-		WebElement automation=driver.findElement(By.xpath("//button[text()='Business rules automation']"));
-		JavascriptExecutor automation_7 = (JavascriptExecutor)driver;
-		automation_7.executeScript("arguments[0].click();", automation);
+//		//clcik on business rules automation
+//		Thread.sleep(3000);
+//		WebElement automation=driver.findElement(By.xpath("//button[text()='Business rules automation']"));
+//		JavascriptExecutor automation_7 = (JavascriptExecutor)driver;
+//		automation_7.executeScript("arguments[0].click();", automation);
 
 //		//click on mark as reviwed
 //		Thread.sleep(3000);

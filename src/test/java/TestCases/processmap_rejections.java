@@ -21,13 +21,15 @@ public class processmap_rejections extends Baseclass
 	public void processmap_rejections() throws InterruptedException 
 	{
 		
-
-		WebDriver driver= new ChromeDriver();
-		driver.get("https://pbl.3-cubed.com/");
-		String A="https://pbl.3-cubed.com/";	
+		
 
 		
-		String WelcomePage="https://pbl.3-cubed.com/Projects/Welcome";
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://prod.3-cubed.com/");
+		String A="https://prod.3-cubed.com/";	
+
+		
+		String WelcomePage="https://prod.3-cubed.com/Projects/Welcome";
 
 		driver.get(A);
 		//Maximize window
@@ -44,7 +46,7 @@ public class processmap_rejections extends Baseclass
 			System.out.println("Login Success");
 		}
 
-		if (AA.equals("https://pbl.3-cubed.com/Account/LogOn"))
+		if (AA.equals("https://prod.3-cubed.com/Account/LogOn"))
 		{
 			driver.findElement(By.xpath("//button[text()='Log Out']")).click();
 			driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("Rama krishna");
@@ -65,85 +67,18 @@ public class processmap_rejections extends Baseclass
 
 		//click on project
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='4259: zip__file__infosys5182']")));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
 		
 		//click on input button
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		WebElement input_button=driver.findElement(By.xpath("//a[@title='Input Model']"));
 		JavascriptExecutor click_input_button = (JavascriptExecutor)driver;
 		click_input_button.executeScript("arguments[0].click();", input_button);
 		
-		
-//		//select the all the teams
-//		List<WebElement> all_teams=	driver.findElements(By.xpath("(//table//tr//td[1])"));
-//		
-//		
-//		
-//		for(int i=1;i<=all_teams.size();i++)
-//		{
-//		
-//		
-//		
-//	   WebElement check_box=  driver.findElement(By.xpath("((//table//tr//td[1])["+i+"])"));
-//	   JavascriptExecutor click_check_box = (JavascriptExecutor) driver;                            
-//	   click_check_box.executeScript("arguments[0].click();", check_box);
-//		
-//		
-//		}
-//		
-//		
-//		//click on the merge teams
-//		
-//	    WebElement merge_teams = driver.findElement(By.xpath("//button[text()='Merge Teams']"));
-//	    JavascriptExecutor click_merge_teams = (JavascriptExecutor) driver;                            
-//	    click_merge_teams.executeScript("arguments[0].click();", merge_teams);
-//		
-//	    //click on ok 
-//	    Thread.sleep(3000);
-//	    WebElement ok=driver.findElement(By.xpath("//button[@id='alertify-ok']"));
-//	    JavascriptExecutor click_ok = (JavascriptExecutor) driver;                            
-//	    click_ok.executeScript("arguments[0].click();", ok);
-//	    
-//	    
-//	    
-//		
-//		//click on the proceed
-//		WebDriverWait click_proceed=new WebDriverWait(driver, Duration.ofSeconds(20));
-//		WebElement click_proceed_button=click_proceed.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn btn-warning float-end']")));
-//		JavascriptExecutor click_button = (JavascriptExecutor) driver;                            
-//		click_button.executeScript("arguments[0].click();", click_proceed_button);
-//		
-//		
-//        //click on the save 
-//		WebElement save=driver.findElement(By.xpath("//button[@class='btn btn-success']"));
-//		JavascriptExecutor click_save = (JavascriptExecutor) driver;                            
-//		click_save.executeScript("arguments[0].click();", save);
-//				
-//        //click  on prev
-//		WebElement prev=driver.findElement(By.xpath("//button[@class=\"btn btn-sm btn-secondary\"]"));
-//		JavascriptExecutor click_prev = (JavascriptExecutor) driver;
-//		click_prev.executeScript("arguments[0].click();", prev);
-//		
-//		
-//		//click on the next button
-//		WebElement next=driver.findElement(By.xpath("//button[@class='btn btn-sm btn-secondary ms-2']"));
-//		JavascriptExecutor click_next = (JavascriptExecutor) driver;
-//		click_next.executeScript("arguments[0].click();", next);
-//		
-//		//click on proceed button
-//		WebElement proceed=driver.findElement(By.xpath("//button[text()='Proceed']"));
-//		JavascriptExecutor click_pro = (JavascriptExecutor) driver;
-//		click_pro.executeScript("arguments[0].click();", proceed);
-//		
-//		
-//		//click on the let's go button
-//		WebElement lets_go=driver.findElement(By.xpath("//a[text()='Let's Begin']"));
-//		JavascriptExecutor click_lets_go = (JavascriptExecutor) driver;	
-//		click_lets_go.executeScript("arguments[0].click();", lets_go);
-//		
+	
 
 		
 		//click on process map and rejections
@@ -255,93 +190,7 @@ public class processmap_rejections extends Baseclass
 		compare_click.executeScript("arguments[0].click();", compare);
 
 
-//
-//		//click on check standardaziation
-//
-//		WebElement check_standarization=driver.findElement(By.xpath("//button[text()='Standardization Check for Activities']"));
-//		JavascriptExecutor click_link = (JavascriptExecutor)driver;
-//		click_link.executeScript("arguments[0].click();", check_standarization);
-//
-//		//click on the link
-//
-//		WebElement edit_project_details=driver.findElement(By.xpath("//a[@href=\"/Projects/ProjectAdmin\"]"));
-//		JavascriptExecutor just_click = (JavascriptExecutor)driver;
-//		just_click.executeScript("arguments[0].click();", edit_project_details);
-//
-//
-//		//enter the project name 
-//
-//		driver.findElement(By.xpath("//input[@id=\"editPrjctId\"]")).clear();
-//		Thread.sleep(3000);
-//		driver.findElement(By.xpath("//input[@id=\"editPrjctId\"]")).sendKeys("AUTOMATION TESTING");
-//
-//
-//		//enter the project decsription
-//
-//
-//		driver.findElement(By.xpath("//textarea[@id=\"projectNarrat\"]")).sendKeys("AUTOMATION TESTING");
-//
-//
-//
-//
-//		//click on save 
-//		WebElement save_click=driver.findElement(By.xpath("//button[@id='btnEditProject']"));
-//		JavascriptExecutor button_save = (JavascriptExecutor)driver;
-//		button_save.executeScript("arguments[0].click();", save_click);
-//		
-//		
-
-//		Thread.sleep(3000);
-//
-//		driver.navigate().back();
-
-
-
-//		//click on tempalates
-//		Thread.sleep(3000);
-//		WebElement templates_click=	driver.findElement(By.xpath("//a[@id='download-tab']"));
-//		JavascriptExecutor templatesclick = (JavascriptExecutor)driver;
-//		templatesclick.executeScript("arguments[0].click();", templates_click);
-
-
-		//				//Download the tempalte zip
-		//				WebElement template_zip=driver.findElement(By.xpath("//button[@id='mergeScreen']"));
-		//				JavascriptExecutor templatezip = (JavascriptExecutor)driver;
-		//				templatezip.executeScript("arguments[0].click();", template_zip);
-		//
-		//
-		//				// multiple window handler
-		//
-		//				String mainWindowHandle11 = driver.getWindowHandle();
-		//				System.out.println(mainWindowHandle11);
-		//
-		//				Set<String> allWindowHandles11 = driver.getWindowHandles();
-		//				System.out.println(allWindowHandles11);
-		//
-		//				for (String handle1 : allWindowHandles11)
-		//				{
-		//					if (!handle1.equals(mainWindowHandle11))
-		//					{
-		//						Thread.sleep(3000);  
-		//						driver.switchTo().window(mainWindowHandle11);
-		//
-		//
-		//					}
-		//				}
-		//				System.out.println(mainWindowHandle11);
-		//
-		//				//printing child window
-		//				System.out.println("Child Window");
-		//
-		//
-		//				
-		//				
-		//
-		//				//click on ok we are predicting the data
-		//				WebElement predicting_data=driver.findElement(By.xpath("//button[@id='alertify-ok']"));
-		//				JavascriptExecutor predicting_download_template = (JavascriptExecutor)driver;
-		//				predicting_download_template.executeScript("arguments[0].click();", predicting_data);
-		//				
+			
 
 		Thread.sleep(9000);
 
@@ -356,11 +205,6 @@ public class processmap_rejections extends Baseclass
 		JavascriptExecutor history = (JavascriptExecutor)driver;
 		history.executeScript("arguments[0].click();", collapse_cruch);
 
-//		//clcik on the gen ai
-//        Thread.sleep(3000);
-//		WebElement gen_ai=driver.findElement(By.xpath("//a[@id='genai-tab']"));
-//		JavascriptExecutor genai = (JavascriptExecutor)driver;
-//		genai.executeScript("arguments[0].click();", gen_ai);
 
 		
 		driver.navigate().refresh();
@@ -371,96 +215,7 @@ public class processmap_rejections extends Baseclass
 		JavascriptExecutor executor_ob = (JavascriptExecutor)driver;
 		executor_ob.executeScript("arguments[0].click();", obseravtions);
 
-//		//scoll to middle
-//		JavascriptExecutor top_input = (JavascriptExecutor) driver;
-//		top_input.executeScript("window.scrollTo(0,0);");
 
-
-		//click on rework loops
-//		WebDriverWait rework_loops=new WebDriverWait(driver, Duration.ofSeconds(0));
-//		WebElement Automation_robotics=rework_loops.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='rework loop']")));
-//		
-//		WebElement Automation_robotics=driver.findElement(By.xpath("//span[text()='rework loop']"));
-//		Thread.sleep(10000);
-//		JavascriptExecutor click_rework_loops = (JavascriptExecutor) driver;
-//		click_rework_loops.executeScript("arguments[0].click();", Automation_robotics);
-//
-//
-//
-//		//click on close
-//		Thread.sleep(3000);
-//		WebElement close=driver.findElement(By.xpath("//div[@id='IframeDialog']/descendant::button[@type='button']"));
-//		JavascriptExecutor click_close = (JavascriptExecutor)driver;
-//		click_close.executeScript("arguments[0].click();", close);
-//
-//
-//		//scoll to middle
-//		JavascriptExecutor scroll_middle = (JavascriptExecutor) driver;
-//		scroll_middle.executeScript("window.scrollTo(0,250);");
-//
-//
-//		//click on paths
-//		Thread.sleep(10000);
-//		WebElement click_on_path=driver.findElement(By.xpath("//span[text()='Paths']"));
-//
-//		Thread.sleep(10000); 
-//		JavascriptExecutor click_on_paths = (JavascriptExecutor) driver;
-//		click_on_paths.executeScript("arguments[0].click();", click_on_path);
-//
-//
-//
-//		//click on close
-//		Thread.sleep(3000);
-//		WebElement click_path=driver.findElement(By.xpath("//div[@id='IframeDialog']/descendant::button[@type='button']"));
-//		JavascriptExecutor just_close = (JavascriptExecutor)driver;
-//		just_close.executeScript("arguments[0].click();", click_path);
-//
-//
-//		
-//		//scoll to middle
-//		JavascriptExecutor scroll_bottom = (JavascriptExecutor) driver;
-//		scroll_bottom.executeScript("window.scrollTo(0,500);");
-//
-//		Thread.sleep(3000);
-//		
-//
-//		//click on rejection path
-//
-//		Thread.sleep(10000);
-//		WebElement rejections_path=driver.findElement(By.xpath("//span[text()=\"Rejection path\"]"));
-//		Thread.sleep(10000);
-//		JavascriptExecutor click_rejection_path = (JavascriptExecutor) driver;
-//		click_rejection_path.executeScript("arguments[0].click();", rejections_path);
-//
-//
-//		//click on close
-//		Thread.sleep(3000);
-//		WebElement rejection_path=driver.findElement(By.xpath("//div[@id='IframeDialog']/descendant::button[@type='button']"));
-//		JavascriptExecutor click_rejections = (JavascriptExecutor)driver;
-//		click_rejections.executeScript("arguments[0].click();", rejection_path);
-//
-//
-//
-//		Thread.sleep(3000);
-//		//scoll to middle
-//		JavascriptExecutor scroll_bottom_bottom = (JavascriptExecutor) driver;
-//		scroll_bottom_bottom.executeScript("window.scrollTo(0,500);");
-//
-//		
-//		//click on the decision  link
-//
-//		WebElement decision_link=driver.findElement(By.xpath("//a[text()='Click here']"));
-//		JavascriptExecutor click_decision = (JavascriptExecutor) driver;
-//		click_decision.executeScript("arguments[0].click();", decision_link);
-//
-//
-//		//click on close
-//		Thread.sleep(3000);
-//		WebElement click_close_decision=driver.findElement(By.xpath("//div[@id='IframeDialog']/descendant::button[@type='button']"));
-//		JavascriptExecutor click_close_now = (JavascriptExecutor)driver;
-//		click_close_now.executeScript("arguments[0].click();", click_close_decision);
-//
-//
 
 		WebDriverWait wait1=new WebDriverWait(driver, Duration.ofSeconds(20));
 
@@ -537,38 +292,38 @@ public class processmap_rejections extends Baseclass
 		
 		
 
-		//click on the three lines
-
-		WebElement three_lines=driver.findElement(By.xpath("//i[@class='fas fa-bars fa-2x p-2']"));
-		JavascriptExecutor three_lines_click= (JavascriptExecutor) driver;
-		three_lines_click.executeScript("arguments[0].click();", three_lines);
-
-		//click on the download button
-
-		WebElement download_button=driver.findElement(By.xpath("//a[@title='Download Visio & Recovery']"));
-		JavascriptExecutor click_download_button= (JavascriptExecutor) driver;
-		click_download_button.executeScript("arguments[0].click();", download_button);
-
-		//click on all downloads under the symbol
-
-
-		List<WebElement> all_downloads=driver.findElements(By.xpath("//i[@class='fas fa-file-download']"));
-
-		for (int D = 1; D <= all_downloads.size(); D++) 
-		{
-
-			WebElement click_menu=driver.findElement(By.xpath("(//i[@class='fas fa-file-download'])["+D+"]"));
-
-
-			JavascriptExecutor pdf_click = (JavascriptExecutor) driver;
-			pdf_click.executeScript("arguments[0].click();", click_menu);
-
-			Thread.sleep(3000);
-
-
-
-
-		}
+//		//click on the three lines
+//
+//		WebElement three_lines=driver.findElement(By.xpath("//i[@class='fas fa-bars fa-2x p-2']"));
+//		JavascriptExecutor three_lines_click= (JavascriptExecutor) driver;
+//		three_lines_click.executeScript("arguments[0].click();", three_lines);
+//
+//		//click on the download button
+//
+//		WebElement download_button=driver.findElement(By.xpath("//a[@title='Download Visio & Recovery']"));
+//		JavascriptExecutor click_download_button= (JavascriptExecutor) driver;
+//		click_download_button.executeScript("arguments[0].click();", download_button);
+//
+//		//click on all downloads under the symbol
+//
+//
+//		List<WebElement> all_downloads=driver.findElements(By.xpath("//i[@class='fas fa-file-download']"));
+//
+//		for (int D = 1; D <= all_downloads.size(); D++) 
+//		{
+//
+//			WebElement click_menu=driver.findElement(By.xpath("(//i[@class='fas fa-file-download'])["+D+"]"));
+//
+//
+//			JavascriptExecutor pdf_click = (JavascriptExecutor) driver;
+//			pdf_click.executeScript("arguments[0].click();", click_menu);
+//
+//			Thread.sleep(3000);
+//
+//
+//
+//
+//		}
 
 //		//click on upload the process map
 //
@@ -680,7 +435,6 @@ public class processmap_rejections extends Baseclass
 		
 		
 	}
-	
 	
 	
 	

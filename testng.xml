@@ -1,206 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 <suite name="Suite">
-<<<<<<< HEAD
 
-	<listeners>
-		<listener class-name="Utilities.ExtendReports"></listener>
-	</listeners>
+  <listeners>
+    <listener class-name="Utilities.ExtendReports"/>
+  </listeners>
 
-	<test thread-count="5" name="testng.xml">
-
-		<!-- Removed the delay parameter -->
-
-		<classes>
-
-			<!--Input screen classes starts -->
-
-
-			<class name="TestCases.processmap_rejections" />
-			<class name="TestCases.gelocate_working_hours" />
-			<class name="TestCases.System_applications" />
-			<class name="TestCases.products" />
-			<class name="TestCases.periodic_activities" />
-			<class name="TestCases.Volume" />
-			<class name="TestCases.AHT" />
-			<class name="TestCases.gelocate_team_size" />
-			<class name="TestCases.Input_screen_release_wait_type" />
-			<class name="TestCases.Deadlines" />
-			<class name="TestCases.forms" />
-			<class name="TestCases.business_rules" />
-			<class name="TestCases.Team_salary" />
-			<class name="TestCases.Operations_sites" />
-			<class name="TestCases.NVA" />
-			<class name="TestCases.control_identification" />
-			<class name="TestCases.Control_validation" />
-
-			<!--Input screen classes Ends -->
-
-
-			<!-- Decision tree validation claases starts -->
-
-			<class name="Decision_tree_validation.All_Decision_tree_validation" />
-			<class
-				name="Decision_tree_validation.Benefit_calculations_decision_tree" />
-			<class name="Decision_tree_validation.Comparison_using_soft_assert" />
-			<class
-				name="Decision_tree_validation.Decision_tree_node_data_validation" />
-			<class
-				name="Decision_tree_validation.Decision_tree_nodes_comparision" />
-			<class name="Decision_tree_validation.Decision_tree_validation" />
-			<class name="Decision_tree_validation.Effort_data_comparison" />
-
-			<!-- Decision tree validation claases Ends -->
-
-
-			<!--Decision tree  nodes widgets starts here  -->
-
-			<class
-				name="Decision_tree_automation.Automation_motgage_project_for_creation" />
-
-			<class
-				name="Decision_tree_automation.Competancy_compensation_team_location" />
-
-			<class
-				name="Decision_tree_automation.Competency_and_team_competency_cost" />
-
-			<class
-				name="Decision_tree_automation.Competency_work_allocation_skilling" />
-
-			<class name="Decision_tree_automation.Component_cost_component" />
-
-			<class name="Decision_tree_automation.Component_cost_team_location" />
-
-			<class
-				name="Decision_tree_automation.Control_coverage_adeqecy_under_controlled" />
-
-			<class name="Decision_tree_automation.Control_coverage_adeqecy" />
-
-			<class
-				name="Decision_tree_automation.control_coverage_control_effect_work_allocation_skilling" />
-
-			<class
-				name="Decision_tree_automation.Control_coverage_control_effort_automation_robotics" />
-
-			<class
-				name="Decision_tree_automation.control_coverage_control_effort_non_value_added_work" />
-
-			<class
-				name="Decision_tree_automation.control_coverage_control_rework_rework_rejections" />
-
-			<class
-				name="Decision_tree_automation.Control_coverage_Effectiveness_control_reduency" />
-
-			<class
-				name="Decision_tree_automation.Control_coverage_Effectiveness_under_controlled" />
-
-			<class
-				name="Decision_tree_automation. Control_coverage_Effectiveness_work_allocation_skilling" />
-
-			<class
-				name="Decision_tree_automation.Control_coverages_Adequecy_under_controlled" />
-
-
-			<class name="Decision_tree_automation.critical_path_allpredcessors" />
-
-			<class
-				name="Decision_tree_automation.Customer_experiecnce_serial_or_batch" />
-
-			<class
-				name="Decision_tree_automation.Customer_experience_bottleneck_delays_workallocation" />
-
-			<class
-				name="Decision_tree_automation.customer_experience_bottleneck_serial_and_batch" />
-
-			<class
-				name="Decision_tree_automation.Customer_experience_bottoleneck_delay_under_maxdelays" />
-
-			<class
-				name="Decision_tree_automation.customer_experience_criticalpath_delays" />
-
-			<class
-				name="Decision_tree_automation.customer_experience_criticalpath_setdeadlines" />
-
-			<class name="Decision_tree_automation.customer_experience_Dealys" />
-
-
-			<class
-				name="Decision_tree_automation.Customer_experience_optimize_cycle_time" />
-
-
-			<class
-				name="Decision_tree_automation.Customer_experience_rejections" />
-
-			<class
-				name="Decision_tree_automation.customer_Experience_tree_Rework_and_rejections" />
-
-			<class
-				name="Decision_tree_automation.Customer_experience_work_allocation" />
-
-			<class
-				name="Decision_tree_automation.customerexperience_bottleneck_shift_workinghours" />
-
-			<class
-				name="Decision_tree_automation.Deadlines_under_peak_utilization" />
-
-			<class
-				name="Decision_tree_automation.Decision_effort_automation_Robotic" />
-
-			<class
-				name="Decision_tree_automation.Decision_tree_effort_control_redundancy" />
-
-			<class
-				name="Decision_tree_automation.Decision_tree_effort_rework_rejections" />
-
-			<class name="Decision_tree_automation.Effort_Automation_robotics" />
-
-			<class name="Decision_tree_automation.Effort_control_redundancy" />
-
-
-			<class name="Decision_tree_automation.Effort_NVA" />
-
-
-			<class
-				name="Decision_tree_automation.Effort_rework_rejections_subwidget" />
-
-
-			<class name="Decision_tree_automation.Effort_rework_rejections" />
-
-
-			<class name="Decision_tree_automation.Peak_utilization_delays" />
-
-			<class name="Decision_tree_automation.peak_utilization_merge_teams" />
-
-			<class
-				name="Decision_tree_automation.peak_utilization_Optimize_By_cost" />
-
-			<class
-				name="Decision_tree_automation.peak_utilization_under_over_capacity" />
-
-
-			<class
-				name="Decision_tree_automation.Shift_working_hours_peak_and_utilization" />
-
-			<class
-				name="Decision_tree_automation.Work_allocation_peakandutlization" />
-
-			<!-- Decision tree nodes ends here -->
-
-
-		</classes>
-
-	</test> <!--
-	testng.xml -->
-
-</suite> <!--
-Suite -->
-=======
-<listeners>
-<listener class-name="Utilities.ExtendReports"></listener>
-</listeners>
   <test thread-count="5" name="testng.xml">
+
     <classes>
-     <class name="TestCases.processmap_rejections"/>
+
+      <!-- Input screen classes -->
+      <class name="TestCases.processmap_rejections"/>
       <class name="TestCases.gelocate_working_hours"/>
       <class name="TestCases.System_applications"/>
       <class name="TestCases.products"/>
@@ -211,16 +23,70 @@ Suite -->
       <class name="TestCases.Input_screen_release_wait_type"/>
       <class name="TestCases.Deadlines"/>
       <class name="TestCases.forms"/>
-       <class name="TestCases.business_rules"/>
-       <class name="TestCases.Team_salary"/>
-       <class name="TestCases.Operations_sites"/>
-       <class name="TestCases.NVA"/>
+      <class name="TestCases.business_rules"/>
+      <class name="TestCases.Team_salary"/>
+      <class name="TestCases.Operations_sites"/>
+      <class name="TestCases.NVA"/>
       <class name="TestCases.control_identification"/>
-       <class name="TestCases.Control_validation"/>
-     
-     
-   
+      <class name="TestCases.Control_validation"/>
+
+      <!-- Decision tree validation -->
+      <class name="Decision_tree_validation.All_Decision_tree_validation"/>
+      <class name="Decision_tree_validation.Benefit_calculations_decision_tree"/>
+      <class name="Decision_tree_validation.Comparison_using_soft_assert"/>
+      <class name="Decision_tree_validation.Decision_tree_node_data_validation"/>
+      <class name="Decision_tree_validation.Decision_tree_nodes_comparision"/>
+      <class name="Decision_tree_validation.Decision_tree_validation"/>
+      <class name="Decision_tree_validation.Effort_data_comparison"/>
+
+      <!-- Decision tree automation -->
+      <class name="Decision_tree_automation.Automation_motgage_project_for_creation"/>
+      <class name="Decision_tree_automation.Competancy_compensation_team_location"/>
+      <class name="Decision_tree_automation.Competency_and_team_competency_cost"/>
+      <class name="Decision_tree_automation.Competency_work_allocation_skilling"/>
+      <class name="Decision_tree_automation.Component_cost_component"/>
+      <class name="Decision_tree_automation.Component_cost_team_location"/>
+      <class name="Decision_tree_automation.Control_coverage_adeqecy_under_controlled"/>
+      <class name="Decision_tree_automation.Control_coverage_adeqecy"/>
+      <class name="Decision_tree_automation.control_coverage_control_effect_work_allocation_skilling"/>
+      <class name="Decision_tree_automation.Control_coverage_control_effort_automation_robotics"/>
+      <class name="Decision_tree_automation.control_coverage_control_effort_non_value_added_work"/>
+      <class name="Decision_tree_automation.control_coverage_control_rework_rework_rejections"/>
+      <class name="Decision_tree_automation.Control_coverage_Effectiveness_control_reduency"/>
+      <class name="Decision_tree_automation.Control_coverage_Effectiveness_under_controlled"/>
+      <class name="Decision_tree_automation.Control_coverage_Effectiveness_work_allocation_skilling"/>
+      <class name="Decision_tree_automation.Control_coverages_Adequecy_under_controlled"/>
+      <class name="Decision_tree_automation.critical_path_allpredcessors"/>
+      <class name="Decision_tree_automation.Customer_experiecnce_serial_or_batch"/>
+      <class name="Decision_tree_automation.Customer_experience_bottleneck_delays_workallocation"/>
+      <class name="Decision_tree_automation.customer_experience_bottleneck_serial_and_batch"/>
+      <class name="Decision_tree_automation.Customer_experience_bottoleneck_delay_under_maxdelays"/>
+      <class name="Decision_tree_automation.customer_experience_criticalpath_delays"/>
+      <class name="Decision_tree_automation.customer_experience_criticalpath_setdeadlines"/>
+      <class name="Decision_tree_automation.customer_experience_Dealys"/>
+      <class name="Decision_tree_automation.Customer_experience_optimize_cycle_time"/>
+      <class name="Decision_tree_automation.Customer_experience_rejections"/>
+      <class name="Decision_tree_automation.customer_Experience_tree_Rework_and_rejections"/>
+      <class name="Decision_tree_automation.Customer_experience_work_allocation"/>
+      <class name="Decision_tree_automation.customerexperience_bottleneck_shift_workinghours"/>
+      <class name="Decision_tree_automation.Deadlines_under_peak_utilization"/>
+      <class name="Decision_tree_automation.Decision_effort_automation_Robotic"/>
+      <class name="Decision_tree_automation.Decision_tree_effort_control_redundancy"/>
+      <class name="Decision_tree_automation.Decision_tree_effort_rework_rejections"/>
+      <class name="Decision_tree_automation.Effort_Automation_robotics"/>
+      <class name="Decision_tree_automation.Effort_control_redundancy"/>
+      <class name="Decision_tree_automation.Effort_NVA"/>
+      <class name="Decision_tree_automation.Effort_rework_rejections_subwidget"/>
+      <class name="Decision_tree_automation.Effort_rework_rejections"/>
+      <class name="Decision_tree_automation.Peak_utilization_delays"/>
+      <class name="Decision_tree_automation.peak_utilization_merge_teams"/>
+      <class name="Decision_tree_automation.peak_utilization_Optimize_By_cost"/>
+      <class name="Decision_tree_automation.peak_utilization_under_over_capacity"/>
+      <class name="Decision_tree_automation.Shift_working_hours_peak_and_utilization"/>
+      <class name="Decision_tree_automation.Work_allocation_peakandutlization"/>
+
     </classes>
-  </test> <!-- testng.xml -->
-</suite> <!-- Suite -->
->>>>>>> e19c58207ea73b98dd6513106d65d0a4cff7275f
+
+  </test>
+
+</suite>

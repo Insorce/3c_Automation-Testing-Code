@@ -22,8 +22,12 @@ public class gelocate_working_hours
 	public void gelocate_working_hours() throws IOException, InterruptedException 
     {
     	
+<<<<<<< HEAD
     
 
+=======
+    	
+>>>>>>> e19c58207ea73b98dd6513106d65d0a4cff7275f
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://prod.3-cubed.com/");
 		String A="https://prod.3-cubed.com/";	
@@ -345,11 +349,19 @@ public class gelocate_working_hours
 		
 		//click on system and applications
 		
+<<<<<<< HEAD
 //		Thread.sleep(3000);
 //		WebElement  system_and_applications=driver.findElement(By.xpath("//a[text()='Systems & Applications ']"));
 //		
 //		JavascriptExecutor click_sys = (JavascriptExecutor)driver;
 //		click_sys.executeScript("arguments[0].click();", system_and_applications);
+=======
+		Thread.sleep(3000);
+		WebElement  system_and_applications=driver.findElement(By.xpath("//a[text()='Systems & Applications ']"));
+		
+		JavascriptExecutor click_sys = (JavascriptExecutor)driver;
+		click_sys.executeScript("arguments[0].click();", system_and_applications);
+>>>>>>> e19c58207ea73b98dd6513106d65d0a4cff7275f
 
     }
     	

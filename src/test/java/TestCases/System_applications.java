@@ -21,8 +21,8 @@ public class System_applications extends Baseclass
 	public void system_and_applications() throws InterruptedException
 	{
 		
-		
-		
+
+
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://prod.3-cubed.com/");
 		String A="https://prod.3-cubed.com/";	
@@ -457,6 +457,9 @@ public class System_applications extends Baseclass
 //
 //
 //
+		
+		
+	
 		}
 }
 

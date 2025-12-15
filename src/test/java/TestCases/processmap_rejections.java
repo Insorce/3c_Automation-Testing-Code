@@ -21,6 +21,7 @@ public class processmap_rejections extends Baseclass
 	public void processmap_rejections() throws InterruptedException 
 	{
 		
+<<<<<<< HEAD
 		
 
 		
@@ -29,6 +30,15 @@ public class processmap_rejections extends Baseclass
 		String A="https://prod.3-cubed.com/";	
 
 		
+=======
+
+		
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://prod.3-cubed.com/");
+		String A="https://prod.3-cubed.com/";	
+
+		
+>>>>>>> e19c58207ea73b98dd6513106d65d0a4cff7275f
 		String WelcomePage="https://prod.3-cubed.com/Projects/Welcome";
 
 		driver.get(A);
@@ -432,6 +442,7 @@ public class processmap_rejections extends Baseclass
 		executor_9.executeScript("arguments[0].click();", geolocate_working_hours);
 
 
+		
 		
 		
 	}

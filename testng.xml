@@ -30,7 +30,7 @@
       <class name="TestCases.control_identification"/>
       <class name="TestCases.Control_validation"/>
 
-      <!-- Decision tree validation -->
+      <!-- Decision tree validation 
       <class name="Decision_tree_validation.All_Decision_tree_validation"/>
       <class name="Decision_tree_validation.Benefit_calculations_decision_tree"/>
       <class name="Decision_tree_validation.Comparison_using_soft_assert"/>
@@ -39,7 +39,7 @@
       <class name="Decision_tree_validation.Decision_tree_validation"/>
       <class name="Decision_tree_validation.Effort_data_comparison"/>
 
-      <!-- Decision tree automation -->
+      <!-- Decision tree automation 
       <class name="Decision_tree_automation.Automation_motgage_project_for_creation"/>
       <class name="Decision_tree_automation.Competancy_compensation_team_location"/>
       <class name="Decision_tree_automation.Competency_and_team_competency_cost"/>

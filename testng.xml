@@ -13,7 +13,7 @@
 
       <!-- Input screen classes -->
       <class name="TestCases.processmap_rejections"/>
-      <class name="TestCases.gelocate_working_hours"/>
+        <!-- <class name="TestCases.gelocate_working_hours"/>
       <class name="TestCases.System_applications"/>
       <class name="TestCases.products"/>
       <class name="TestCases.periodic_activities"/>
@@ -83,7 +83,7 @@
       <class name="Decision_tree_automation.peak_utilization_Optimize_By_cost"/>
       <class name="Decision_tree_automation.peak_utilization_under_over_capacity"/>
       <class name="Decision_tree_automation.Shift_working_hours_peak_and_utilization"/>
-      <class name="Decision_tree_automation.Work_allocation_peakandutlization"/>
+      <class name="Decision_tree_automation.Work_allocation_peakandutlization"/>   -->
 
     </classes>
 

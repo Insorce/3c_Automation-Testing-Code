@@ -2,7 +2,6 @@ package TestCases;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -20,25 +19,14 @@ public class processmap_rejections extends Baseclass
 	@Test
 	public void processmap_rejections() throws InterruptedException 
 	{
-		
-<<<<<<< HEAD
-		
+
 
 		
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://prod.3-cubed.com/");
 		String A="https://prod.3-cubed.com/";	
 
-		
-=======
 
-		
-		WebDriver driver= new ChromeDriver();
-		driver.get("https://prod.3-cubed.com/");
-		String A="https://prod.3-cubed.com/";	
-
-		
->>>>>>> e19c58207ea73b98dd6513106d65d0a4cff7275f
 		String WelcomePage="https://prod.3-cubed.com/Projects/Welcome";
 
 		driver.get(A);
@@ -47,7 +35,7 @@ public class processmap_rejections extends Baseclass
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		//enter username
-		driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("Rama krishna");
+		driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("mahesh");
 		//enter password
 		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("Welcome@2025");
 		driver.findElement(By.xpath("//button[@name='Logon']")).click();
@@ -59,7 +47,7 @@ public class processmap_rejections extends Baseclass
 		if (AA.equals("https://prod.3-cubed.com/Account/LogOn"))
 		{
 			driver.findElement(By.xpath("//button[text()='Log Out']")).click();
-			driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("Rama krishna");
+			driver.findElement(By.xpath("//input[@id='UName']")).sendKeys("mahesh");
 			//enter password
 			driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("Welcome@2025");
 			driver.findElement(By.xpath("//button[@name='Logon']")).click();
@@ -76,8 +64,8 @@ public class processmap_rejections extends Baseclass
 
 
 		//click on project
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='5432: infy1043__child__trending']")));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement insorce678=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/Projects/Welcome?Pid=5536']")));
 		JavascriptExecutor insorce1 = (JavascriptExecutor) driver;                            
 		insorce1.executeScript("arguments[0].click();", insorce678);
 
@@ -88,8 +76,8 @@ public class processmap_rejections extends Baseclass
 		JavascriptExecutor click_input_button = (JavascriptExecutor)driver;
 		click_input_button.executeScript("arguments[0].click();", input_button);
 		
-	
-
+	String title = driver.getTitle();
+       System.out.println("process map rejections started --> "+ title);
 		
 		//click on process map and rejections
 	    Thread.sleep(3000);
@@ -443,6 +431,8 @@ public class processmap_rejections extends Baseclass
 
 
 		
+		String title1 = driver.getTitle();
+	       System.out.println("process map vaidation done user move to geolocate_working_hours --> "+ title1);
 		
 		
 	}
@@ -450,3 +440,6 @@ public class processmap_rejections extends Baseclass
 	
 	
 }
+
+	
+
